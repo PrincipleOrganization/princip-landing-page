@@ -1,0 +1,275 @@
+/* -- IMPORTS -- */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+
+
+/* -- VARIABLES -- */
+$font-main: 'Roboto', sans-serif;
+$background-color-navbar: rgba(30, 30, 30, 0.9);
+$background-color-navbar-sec: rgba(82, 176, 204, 0.9);
+$font-size-title: 1.35rem;
+$color-title: #ffffff;
+$color-white: #ffffff;
+$color-grey: #cfcfcf;
+$background-color-navbar-link: rgba(218, 213, 213, 0.3) !important;
+$background-color-body: #ffffff;
+$font-size-header: 3rem;
+$font-size-subtitle: 1.5rem;
+$font-size-button: 1.1rem;
+$border-radius: 0.6rem;
+$color-main: #52B0CC;
+$color-main-hover: #60bbd6;
+$color-smoke: #d9dbd7;
+$color-dark-background: #444b4e;
+$letter-spacing: 1px;
+
+
+/* -- EXTENSION -- */
+.dark-section {
+  background-color: $color-dark-background;
+  color: $color-smoke;
+}
+
+/* -- GENERAL -- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  -webkit-font-smoothing: antialiased;
+  background-color: $background-color-body;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: block;
+  margin-top: 2rem;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.button {
+  padding: 20px 40px;
+  background-color: $color-main;
+  border-radius: $border-radius;
+  width: 13rem;
+  letter-spacing: $letter-spacing;
+  font-size: $font-size-button;
+
+  &:hover {
+    background-color: $color-main-hover;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* -- NAVBAR -- */
+.navbar {
+  background-color: $background-color-navbar;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  #title {
+    font-size: $font-size-title;
+    font-weight: 700;
+    line-height: 3rem;
+    color: $color-title;
+    text-decoration: none;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+
+    #title-img {
+      width: 3rem;
+      height: 3rem;
+      margin-top: 14px;
+      float: left;
+    }
+
+    #title-lt {
+      color: $color-title;
+      float: left;
+      margin-left: 15px;
+      line-height: 3.5;
+    }
+  }
+
+  .navbar-right {
+    float: right;
+
+    .navbar-link {
+      text-decoration: none;
+      font-size: .8rem;
+      font-weight: 500;
+      line-height: 6;
+      margin-left: 2rem;
+      padding: 0.8rem 1.1rem;
+      color: $color-smoke;
+      letter-spacing: $letter-spacing;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $color-main;
+        border-radius: $border-radius;
+      }
+    }
+  }
+}
+
+.midnightHeader.blue {
+  background-color: $background-color-navbar-sec;
+
+  .navbar-link {
+  color: #ddf2f9;
+
+    &:hover {
+      color: $color-white
+    }
+  }
+}
+
+
+/* -- HEADER -- */
+#header {
+  .landing {
+    height: 100vh;
+    background: url('img/main.jpeg') center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .landing-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 0 8rem 0;
+
+      .landing-title {
+        color: $color-white;
+        font-size: $font-size-header;
+        font-weight: 700;
+        margin-top: 11rem;
+        letter-spacing: 2.5px;
+
+        #landing-title-iot {
+          color: $color-main;
+        }
+      }
+
+      .landing-subtitle {
+        color: $color-white;
+        font-size: $font-size-subtitle;
+        font-size: 28px;
+        margin-top: 3rem;
+        line-height: 1.8rem;
+        letter-spacing: $letter-spacing;
+      }
+
+      .landing-button {
+        margin-top: 6rem;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.body {
+  padding-top: 3rem;
+
+  /* -- PRODUCTS -- */
+  #products {
+
+  }
+
+
+  /* -- CLIENTS -- */
+  #clients {
+    @extend .dark-section;
+  }
+
+  /* -- ABOUT -- */
+  #about {
+
+  }
+
+  /* -- CONTACTS -- */
+  #contacts{
+    @extend .dark-section;
+
+    .email {
+      border: 1px solid $color-dark-background;
+      border-radius: 1rem;
+      padding: 12px;
+      &:hover {
+        border: 1px solid $color-smoke;
+        background-color: lighten($color-dark-background, 5%);
+      }
+    }
+
+    .contact-title {
+      padding: 0.2rem;
+      margin-right: 5px;
+    }
+
+    .contact-item {
+      font-size: 1.5rem;
+      float: left;
+    }
+
+    a {
+      color: $color-smoke;
+    }
+  }
+
+}

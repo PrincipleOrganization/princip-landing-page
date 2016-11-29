@@ -1,0 +1,29 @@
+{
+  "name": "princip-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rm -rf distr; node node_modules/gulp/bin/gulp.js build; node ./src/server/index.js",
+    "start": "node ./src/server/index.js"
+  },
+  "keywords": [],
+  "author": "Yaroslav <shamatienko.yaroslav@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.1",
+    "gulp-imagemin": "3.1.1",
+    "gulp-sass": "2.3.2",
+    "gulp-uglify": "2.0.0"
+  },
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "cookie-parser": "1.4.3",
+    "express": "4.14.0",
+    "jstransformer-markdown-it": "2.0.0",
+    "node-markdown": "0.1.1",
+    "pug": "^2.0.0-beta6",
+    "serve-favicon": "2.3.2"
+  }
+}
