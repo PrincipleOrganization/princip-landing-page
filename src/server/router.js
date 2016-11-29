@@ -12,10 +12,9 @@ const axios = require('axios');
 * Module body.
 **/
 
-const mdApiMainPath = 'https://raw.githubusercontent.com/PrincipleOrganization/princip-landing-page/master/md/';
+const mdApiMainPath = 'https://raw.githubusercontent.com/PrincipleOrganization/princip-landing-page/md/';
 
 const FETCH_PRODUCTS_PATH = 'products.md';
-const FETCH_CONTACTS_PATH = 'contacts.md';
 const FETCH_ABOUT_PATH = 'about.md';
 const FETCH_CLIENTS_PATH = 'clients.md';
 
@@ -37,6 +36,7 @@ router.get('/en', (req, res) => {
     })
     .then(result => {
       message_clients = result.data;
+
       res.render('index', {
         title: 'Princip',
         message_products,
