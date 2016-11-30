@@ -13,3 +13,4 @@ It connect devices in network, collect theirs data and allow managed it throw si
 
 
 
+Кирилиця гнвіпрукьшічаоцйшщуябовщц12234325
