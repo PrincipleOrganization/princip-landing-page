@@ -16,14 +16,14 @@ const mdApiMainPath = 'https://raw.githubusercontent.com/PrincipleOrganization/p
 
 const FETCH_PRODUCTS_PATH = 'products.md';
 const FETCH_ABOUT_PATH = 'about.md';
-const FETCH_CLIENTS_PATH = 'clients.md';
+const FETCH_SERVICES_PATH = 'services.md';
 
 router.get('/', (req, res) => {
   res.redirect('/en');
 });
 
 router.get('/en', (req, res) => {
-  let message_products, message_clients, message_about;
+  let message_products, message_services, message_about;
 
   axios.get(`${mdApiMainPath}${FETCH_PRODUCTS_PATH}`)
     .then(result => {
@@ -32,15 +32,15 @@ router.get('/en', (req, res) => {
     })
     .then(result => {
       message_about = result.data;
-      return axios.get(`${mdApiMainPath}${FETCH_CLIENTS_PATH}`);
+      return axios.get(`${mdApiMainPath}${FETCH_SERVICES_PATH}`);
     })
     .then(result => {
-      message_clients = result.data;
+      message_services = result.data;
 
       res.render('index', {
         title: 'Princip',
         message_products,
-        message_clients,
+        message_services,
         message_about,
         markdown
       });

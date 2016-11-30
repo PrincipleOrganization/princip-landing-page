@@ -16,6 +16,11 @@ gulp.task('img', () => {
     .pipe(gulp.dest('./distr/client/public/img'));
 });
 
+gulp.task('vendor', () => {
+  gulp.src('./src/client/vendor/**')
+    .pipe(gulp.dest('./distr/client/public/vendor'));
+});
+
 gulp.task('js', () => {
   gulp.src(['./src/client/vendor/midnight.jquery.min.js', './src/client/vendor/anime.min.js', './src/client/js/**'])
     .pipe(concat('main.js', {newLine: ';'}))
@@ -23,4 +28,4 @@ gulp.task('js', () => {
     .pipe(gulp.dest('./distr/client/public'));
 });
 
-gulp.task('build', ['sass', 'img', 'js']);
+gulp.task('build', ['sass', 'img', 'js', 'vendor']);

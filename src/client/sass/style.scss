@@ -1,9 +1,11 @@
 /* -- IMPORTS -- */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+@import url('https://fonts.googleapis.com/css?family=Rubik|Cormorant+Garamond');
+@import url('vendor/font-awesome/css/font-awesome.min.css');
 
 
 /* -- VARIABLES -- */
-$font-main: 'Roboto', sans-serif;
+$font-main: 'Rubik', sans-serif;
+$font-secondary: 'Cormorant Garamond';
 $background-color-navbar: rgba(30, 30, 30, 0.9);
 $background-color-navbar-sec: rgba(82, 176, 204, 0.9);
 $font-size-title: 1.35rem;
@@ -19,7 +21,8 @@ $border-radius: 0.6rem;
 $color-main: #52B0CC;
 $color-main-hover: #60bbd6;
 $color-smoke: #d9dbd7;
-$color-dark-background: #444b4e;
+$color-subtext: #7D8789;
+$color-dark-background: #3C3D41;
 $letter-spacing: 1px;
 
 
@@ -49,6 +52,16 @@ a {
   color: black;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0;
+  line-height: 1.4;
+}
+
 .container {
   width: 80%;
   max-width: 90%;
@@ -76,9 +89,11 @@ a {
   width: 13rem;
   letter-spacing: $letter-spacing;
   font-size: $font-size-button;
+  color: $color-white;
 
   &:hover {
-    background-color: $color-main-hover;
+    background-color: $color-white;
+    color: $color-dark-background;
   }
 }
 
@@ -88,18 +103,6 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-section {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-
-  .section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
 }
 
 
@@ -176,6 +179,8 @@ section {
 
 /* -- HEADER -- */
 #header {
+  background-color: $color-main;
+
   .landing {
     height: 100vh;
     background: url('img/main.jpeg') center;
@@ -224,8 +229,38 @@ section {
   }
 }
 
+
 .body {
   padding-top: 3rem;
+
+  section {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      letter-spacing: 3px;
+    }
+  }
+
+  .section-body {
+    .clients-titles {
+      .client-title {
+        width: 32%;
+        float: left;
+        font-family: $font-secondary;
+        font-size: 45px;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        letter-spacing: 3px;
+        line-height: 1.2;
+        min-height: 5rem;
+      }
+    }
+  }
 
   /* -- PRODUCTS -- */
   #products {
@@ -233,43 +268,103 @@ section {
   }
 
 
+  /* -- SERVICES -- */
+  #services {
+    @extend .dark-section;
+  }
+
+
   /* -- CLIENTS -- */
   #clients {
-    @extend .dark-section;
+
   }
 
   /* -- ABOUT -- */
   #about {
-
+    @extend .dark-section;
   }
 
   /* -- CONTACTS -- */
   #contacts{
-    @extend .dark-section;
+    color: $color-dark-background;
 
-    .email {
-      border: 1px solid $color-dark-background;
-      border-radius: 1rem;
-      padding: 12px;
-      &:hover {
-        border: 1px solid $color-smoke;
-        background-color: lighten($color-dark-background, 5%);
+    #contacts-img {
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: 10px;
+
+      path {
+        fill: $color-dark-background !important;
       }
     }
 
-    .contact-title {
-      padding: 0.2rem;
-      margin-right: 5px;
+    #contacts-title {
+      font-size: $font-size-title;
     }
 
-    .contact-item {
-      font-size: 1.5rem;
-      float: left;
+    .contacts-nav {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      .contacts-nav-link {
+        text-decoration: none;
+        font-size: .7rem;
+        font-weight: 500;
+        margin-left: 2rem;
+        padding: 0.8rem 1.1rem;
+        color: $color-dark-background;
+        letter-spacing: $letter-spacing;
+
+        &:hover {
+          color: $color-main;
+          border-radius: $border-radius;
+        }
+      }
     }
 
-    a {
-      color: $color-smoke;
+    .contacts {
+      display: block;
+      color: $color-dark-background;
+
+      .contact {
+        float: left;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-bottom: 2rem;
+
+        .contact-icon {
+          font-size: 30px;
+        }
+
+        .contact-title {
+          padding-bottom: 1rem;
+          padding-top: 1rem;
+          font-size: 1rem;
+        }
+
+        .contact-entry {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .socials {
+      display: block;
+      color: $color-dark-background;
+
+      .social-link {
+        float: left;
+        font-size: 15px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+
+    .rights {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 0.8rem;
+      color: $color-subtext;
     }
   }
-
 }
