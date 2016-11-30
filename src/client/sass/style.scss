@@ -340,10 +340,11 @@ p {
           padding-bottom: 1rem;
           padding-top: 1rem;
           font-size: 1rem;
+          font-weight: bold;
         }
 
         .contact-entry {
-          font-size: 0.8rem;
+          font-size: 1rem;
         }
       }
     }
@@ -363,7 +364,7 @@ p {
     .rights {
       margin-top: 2rem;
       margin-bottom: 2rem;
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       color: $color-subtext;
     }
   }
