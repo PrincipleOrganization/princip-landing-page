@@ -1,7 +1,5 @@
-# Mission
-We are covers all aspects of Internet of Things technology and strategy as it relates to enterprise IT, including the technologies that enhance and enable internal business processes, and the resulting IoT products themselves
+We are a team of enthusiasts-professionals in the development and implementation of complex systems for business that specializes in IoT, web-applications, platform "1C: Enterprise" and more. Using latest and proven technologies of known IT-giants, we achieve high results and provide quality, that is our main goal and idea.
+We are always evolving, always moving and achieving goals.
 
-# Strategy
-Develope IoT devices and bringing it as DaaS (Deivce as a service) with full stack support from designing to dashboards views on it in B2B model. 
 
 
