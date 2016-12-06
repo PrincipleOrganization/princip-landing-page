@@ -36,21 +36,10 @@ html
             a.button.landing-button(href='#products') Show more
 
     div.body(data-midnight="blue")
-      section#products
-        .container(name="products")
-          .center
-            p.section-title Products
-          .section-body!= markdown(message_products)
-
+      include products.pug
       include services.pug
       include clients.pug
-
-      section#about
-        .container(name="about")
-          .center
-            p.section-title About us
-          .section-body!= markdown(message_about)
-
+      include about.pug
       include contacts.pug
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")

@@ -105,6 +105,10 @@ p {
   text-align: center;
 }
 
+.section-body {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
 /* -- NAVBAR -- */
 .navbar {
@@ -235,12 +239,21 @@ p {
 
   section {
     padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 
     .section-title {
       font-size: 1.2rem;
       font-weight: 700;
       text-transform: uppercase;
+      margin-bottom: 1rem;
+      letter-spacing: 3px;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-top: 5rem;
       margin-bottom: 1rem;
       letter-spacing: 3px;
     }
@@ -271,6 +284,85 @@ p {
   /* -- SERVICES -- */
   #services {
     @extend .dark-section;
+    width: 100%;
+
+    .services{
+      width: 100%;
+      margin-top: 1rem;
+      color: $color-dark-background;
+
+      .service-wrapper {
+        float: left;
+        width: 21.5%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        position: relative;
+
+        .service {
+
+          .service-body {
+            background-color: $color-white;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-radius: 5px;
+            height: 22rem;
+
+            i.fa {
+              font-size: 80px;
+              margin-top: 1rem;
+              margin-bottom: 2rem;
+            }
+
+            .title {
+              font-weight: bold;
+              font-size: 16px;
+            }
+
+            .elems {
+              margin: 1rem;
+
+              ul li {
+                list-style: none;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        #service-aud {
+          .service-body {
+            i.fa {
+              color: #269fec;
+            }
+          }
+        }
+
+        #service-dev {
+          .service-body {
+            i.fa {
+              color: #ecd826;
+            }
+          }
+        }
+
+        #service-sup {
+          .service-body {
+            i.fa {
+              color: #f48742;
+            }
+          }
+        }
+
+        #service-con {
+          .service-body {
+            i.fa {
+              color: #b6f450;
+            }
+          }
+        }
+
+      }
+    }
   }
 
 
@@ -281,7 +373,28 @@ p {
 
   /* -- ABOUT -- */
   #about {
-    @extend .dark-section;
+    background-color: #faf8e1;
+
+    .technologies {
+      width: 100%;
+      margin-top: 1rem;
+      display: block;
+
+      .technology {
+        float: left;
+        width: 25%;
+
+        .icon {
+          margin: 1rem;
+          height: 40px;
+        }
+
+        .title {
+          margin: 1rem;
+          width: 10rem;
+        }
+      }
+    }
   }
 
   /* -- CONTACTS -- */

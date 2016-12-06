@@ -1,0 +1,52 @@
+section#about
+  .container(name="about")
+    .center
+      p.section-title About us
+    .section-body!= markdown(message_about)
+    .center
+      p.section-subtitle Technologies and Vendors
+      .technologies.clearfix
+        .technology
+          img.title(src='img/canonical.png')
+        .technology
+          img.title(src='img/docker.png')
+        .technology
+          img.title(src='img/facebook.png')
+        .technology
+          img.title(src='img/github.png')
+
+      .technologies.clearfix
+        .technology
+          img.icon(src='img/ibm.png')
+        .technology
+          img.title(src='img/mongodb.png')
+        .technology
+          img.title(src='img/nodejs.png')
+        .technology
+          img.title(src='img/ubuntu.png')
+
+      .technologies.clearfix
+        .technology
+          img.icon(src='img/1c.png')
+        .technology
+          img.title(src='img/rpi.png')
+        .technology
+          img.title(src='img/digitalocean.png')
+        .technology
+          img.title(src='img/heroku.png')
+
+      .technologies.clearfix
+        .technology
+          img.title(src='img/meteor.png')
+        .technology
+          img.title(src='img/appsheet.png')
+        .technology
+          img.title(src='img/react.png')
+        .technology
+          img.title(src='img/redux.png')
+
+      .technologies.clearfix
+        .technology
+          img.title(src='img/rethinkdb.png')
+        .technology
+          img.icon(src='img/node-red.png')
