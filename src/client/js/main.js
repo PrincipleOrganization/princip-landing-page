@@ -2,6 +2,7 @@ $(document).ready(function() {
   navbarHandler();
   linksHandler();
   animation();
+  typingLandingTitle();
 });
 
 var navbarHandler = function() {
@@ -43,6 +44,18 @@ var animation = function() {
     loop: true,
     direction: 'normal',
     delay: 30000
+  });
+}
+
+var typingLandingTitle = function() {
+  $("#landing-title-iot").typed({
+    strings: ["IoT devices", "IoT applications", "IoT systems", "CRM systems", "WEB applications", "Mobile applications"],
+    typeSpeed: 100,
+    startDelay: 0,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true,
+    showCursor: false
   });
 }
 
