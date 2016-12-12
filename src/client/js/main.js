@@ -43,7 +43,7 @@ var animation = function() {
     },
     loop: true,
     direction: 'normal',
-    delay: 30000
+    delay: 15000
   });
 }
 
