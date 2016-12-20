@@ -1,10 +1,10 @@
 section#about
   .container(name="about")
     .center
-      p.section-title About us
-    .section-body!= markdown(message_about)
+      p.section-title #{sectionTitleAboutUs}
+    p.section-body #{sectionAboutUsLegend}
     .center
-      p.section-subtitle Technologies and Vendors
+      p.section-subtitle #{sectionAboutUsSubtitle}
       .technologies.clearfix
         .technology
           img.title(src='img/canonical.png')

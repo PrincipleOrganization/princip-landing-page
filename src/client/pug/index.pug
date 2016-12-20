@@ -19,21 +19,22 @@ html
 
           //- Navbar
           .navbar-right
-            a.navbar-link(href="#products") Products
-            a.navbar-link(href="#services") Services
-            a.navbar-link(href="#clients") Clients
-            a.navbar-link(href="#about") About us
-            a.navbar-link(href="#contacts") Contacts
+            a.navbar-link(href="#products") #{navbarProducts}
+            a.navbar-link(href="#services") #{navbarServices}
+            a.navbar-link(href="#clients") #{navbarClients}
+            a.navbar-link(href="#about") #{navbarAboutUs}
+            a.navbar-link(href="#contacts") #{navbarContacts}
+            a.navbar-link#i18n(href="/") UA
 
     #header
       .landing
         .container
           .landing-items
             .landing-title
-              #landing-title-iot Internet of Things
-              p for production facilities
-            p.landing-subtitle Hand by hand with modern technologies
-            a.button.landing-button(href='#products') Show more
+              #landing-title-iot #{landingTitle}
+              p #{landingTitleP}
+            p.landing-subtitle #{landingSubtitle}
+            a.button.landing-button(href='#products') #{landingButton}
 
     div.body(data-midnight="blue")
       include products.pug

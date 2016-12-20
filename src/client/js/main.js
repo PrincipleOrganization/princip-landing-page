@@ -1,12 +1,24 @@
+language = 'en';
+
 $(document).ready(function() {
   navbarHandler();
   linksHandler();
   animation();
+  localizacion();
   typingLandingTitle();
 });
 
 var navbarHandler = function() {
   $('.navbar').midnight();
+}
+
+var localizacion = function() {
+  var elem = $('#i18n');
+  var path = window.location.pathname;
+  path = (path === '/en') ? '/ua' : '/en';
+  language = path.substring(1, 3);
+  elem.attr('href', path);
+  elem.text(language);
 }
 
 var linksHandler = function() {
@@ -48,8 +60,13 @@ var animation = function() {
 }
 
 var typingLandingTitle = function() {
+  var strings = ["IoT devices", "IoT applications", "IoT systems", "CRM systems", "WEB applications", "Mobile applications"];
+  if (language === 'en') {
+    strings = ['IoT пристрої', 'Програмне забезпечення IoT', 'IoT системи', 'CRM системи', 'Програмне забезпечення WEB', 'Програмне забезпечення смартфонів'];
+  }
+
   $("#landing-title-iot").typed({
-    strings: ["IoT devices", "IoT applications", "IoT systems", "CRM systems", "WEB applications", "Mobile applications"],
+    strings: strings,
     typeSpeed: 100,
     startDelay: 0,
     backSpeed: 100,

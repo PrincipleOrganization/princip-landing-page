@@ -1,52 +1,43 @@
 section#services
   .container(name="services")
     .center
-      p.section-title Services
-    .section-body!= markdown(message_services)
+      p.section-title #{sectionTitleServices}
     .center
       .services.clearfix
         .service-wrapper
           .service#service-dev
             .service-body
               i.fa.fa-cubes
-              p.title DEVELOPMENT
+              p.title #{sectionServicesServiceTitle1}
               .elems
-                p.text We are developing:
+                p.text #{sectionServicesServiceSubtitle1}
                 ul
-                  li IoT devices
-                  li IoT applications
-                  li IoT systems
-                  li CRM systems
-                  li WEB applications
-                  li Mobile applications
-
+                  each item in sectionServicesServiceElems1
+                    li= item
         .service-wrapper
           .service#service-sup
             .service-body
               i.fa.fa-support
-              p.title SUPPORT
+              p.title #{sectionServicesServiceTitle2}
               .elems
-                p.text We provide support for solutions developed by us and any solutions based on the platform of 1C: Enterprise
+                p.text #{sectionServicesServiceSubtitle2}
         .service-wrapper
           .service#service-con
             .service-body
               i.fa.fa-user-md
-              p.title CONSULTING
+              p.title #{sectionServicesServiceTitle3}
               .elems
-                p.text IT consulting in the areas of:
+                p.text #{sectionServicesServiceSubtitle3}
                 ul
-                  li Agribusiness
-                  li Elevators
-                  li Grain and oil terminals
-                  li Oil refineries
+                  each item in sectionServicesServiceElems3
+                    li= item
         .service-wrapper
           .service#service-aud
             .service-body
               i.fa.fa-thumbs-o-up
-              p.title AUDIT
+              p.title #{sectionServicesServiceTitle4}
               .elems
-                p.text Audit the safe operation of elevators and port terminals:
+                p.text #{sectionServicesServiceSubtitle4}
                 ul
-                  li Accounting system
-                  li Weighing system
-                  li Video monitoring system
+                  each item in sectionServicesServiceElems4
+                    li= item

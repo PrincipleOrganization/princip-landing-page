@@ -8,10 +8,10 @@ section#contacts
         path(d="M976.252,956.503c-33.118,122.76 -166.863,193.728 -298.682,158.408c-131.948,-35.356 -212.32,-163.905 -179.367,-286.887c32.921,-122.862 166.57,-193.984 298.393,-158.871l0.386,0.103c47.837,4.656 100.659,7.056 143.048,-4.462c65.416,-17.777 108.229,-42.013 139.58,-94.029l-103.261,385.378l-0.097,0.36Z" style="fill:#fff;")
       p#contacts-title PRINCIP
       .contacts-nav
-        a.contacts-nav-link(href="#products") Products
-        a.contacts-nav-link(href="#services") Services
-        a.contacts-nav-link(href="#clients") Clients
-        a.contacts-nav-link(href="#about") About us
+        a.contacts-nav-link(href="#products") #{navbarProducts}
+        a.contacts-nav-link(href="#services") #{navbarServices}
+        a.contacts-nav-link(href="#clients") #{navbarClients}
+        a.contacts-nav-link(href="#about") #{navbarAboutUs}
       .contacts.clearfix
         .contact.center
           p.contact-icon
@@ -21,7 +21,7 @@ section#contacts
         .contact.center
           p.contact-icon
             i.fa.fa-phone
-          p.contact-title CALL
+          p.contact-title #{sectionContactsCALL}
           a.contact-entry +38 (097) 168 88 70
           a.contact-entry +38 (097) 646 77 37
       .socials.clearfix
@@ -31,4 +31,4 @@ section#contacts
           i.fa.fa-twitter-square
         a.social-link
           i.fa.fa-instagram
-      p.rights 2016 Princip. All rights reserved.
+      p.rights 2016 Princip. #{rights}
