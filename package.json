@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "rm -rf distr; node node_modules/gulp/bin/gulp.js build; cd ./distr; node ./server/index.js",
     "postinstall": "node node_modules/gulp/bin/gulp.js build",
-    "start": "cd ./distr; node ./server/index.js"
+    "start": "cd ./distr; node ./server/index.js",
+    "dockerize": "rm -rf distr; node node_modules/gulp/bin/gulp.js build; docker build -t princip/org-landing-page .; docker push princip/org-landing-page"
   },
   "keywords": [],
   "author": "Yaroslav <shamatienko.yaroslav@gmail.com>",

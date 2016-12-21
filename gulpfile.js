@@ -33,4 +33,14 @@ gulp.task('server', () => {
     .pipe(gulp.dest('./distr/server'));
 });
 
-gulp.task('build', ['sass', 'img', 'js', 'vendor', 'server']);
+gulp.task('sh', () => {
+  gulp.src('./src/run.sh')
+    .pipe(gulp.dest('./distr'));
+});
+
+gulp.task('package', () => {
+  gulp.src('./package.json')
+    .pipe(gulp.dest('./distr'));
+});
+
+gulp.task('build', ['sass', 'img', 'js', 'vendor', 'server', 'sh', 'package']);
