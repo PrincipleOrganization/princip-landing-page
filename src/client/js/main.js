@@ -57,6 +57,19 @@ var animation = function() {
     direction: 'normal',
     delay: 15000
   });
+
+  setTimeout(function() {
+    $('.landing-items .landing-title').toggleClass('hide magictime swashIn');
+    $('.landing-items .landing-subtitle').toggleClass('hide magictime swashIn');
+  }, 500);
+
+  setTimeout(function() {
+    $('#btn-main').toggleClass('hide magictime swashIn');
+  }, 1000);
+
+  setTimeout(function() {
+    $('#i18n').toggleClass('hide magictime swashIn');
+  }, 2000);
 }
 
 var typingLandingTitle = function() {

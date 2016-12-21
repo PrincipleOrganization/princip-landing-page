@@ -4,7 +4,7 @@ html
 
     link(rel="stylesheet" href="style.css")
   body
-    .navbar
+    .navbar.magictime.slideUpReturn
       .container
         nav#navbar
           .navbar-header
@@ -24,17 +24,16 @@ html
             a.navbar-link(href="#clients") #{navbarClients}
             a.navbar-link(href="#about") #{navbarAboutUs}
             a.navbar-link(href="#contacts") #{navbarContacts}
-            a.navbar-link#i18n(href="/") UA
 
-    #header
+    #header.magictime.spaceInUp
       .landing
         .container
           .landing-items
-            .landing-title
+            .landing-title.hide
               #landing-title-iot #{landingTitle}
               p #{landingTitleP}
-            p.landing-subtitle #{landingSubtitle}
-            a.button.landing-button(href='#products') #{landingButton}
+            p.landing-subtitle.hide #{landingSubtitle}
+            a.button.landing-button.hide#btn-main(href='#products') #{landingButton}
 
     div.body(data-midnight="blue")
       include products.pug
@@ -42,6 +41,8 @@ html
       include clients.pug
       include about.pug
       include contacts.pug
+
+    a.navbar-link.hide#i18n(href="/") UA
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
     script(src="main.js")

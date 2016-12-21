@@ -1,6 +1,7 @@
 /* -- IMPORTS -- */
 @import url('https://fonts.googleapis.com/css?family=Rubik|Cormorant+Garamond');
 @import url('vendor/font-awesome/css/font-awesome.min.css');
+@import url('vendor/magic.min.css');
 
 
 /* -- VARIABLES -- */
@@ -80,6 +81,10 @@ p {
 
 .clearfix:after {
 	clear: both;
+}
+
+.hide {
+  display: none;
 }
 
 .button {
@@ -507,5 +512,20 @@ p {
       font-size: 0.6rem;
       color: $color-subtext;
     }
+  }
+}
+
+#i18n {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: $color-main;
+  color: $color-white;
+  padding: 1.5rem;
+  border-radius: 10rem;
+
+  &:hover {
+    border-width: 1.6rem;
+    background-color: $color-main-hover;
   }
 }
