@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
+const concat = require('gulp-concat');
 
 gulp.task('sass', () => {
   gulp.src('./src/client/sass/style.scss')
@@ -28,4 +28,9 @@ gulp.task('js', () => {
     .pipe(gulp.dest('./distr/client/public'));
 });
 
-gulp.task('build', ['sass', 'img', 'js', 'vendor']);
+gulp.task('server', () => {
+  gulp.src('./src/server/**')
+    .pipe(gulp.dest('./distr/server'));
+});
+
+gulp.task('build', ['sass', 'img', 'js', 'vendor', 'server']);

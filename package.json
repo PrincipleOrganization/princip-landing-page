@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "rm -rf distr; node node_modules/gulp/bin/gulp.js build; node ./src/server/index.js",
+    "dev": "rm -rf distr; node node_modules/gulp/bin/gulp.js build; cd ./distr; node ./server/index.js",
     "postinstall": "node node_modules/gulp/bin/gulp.js build",
-    "start": "node ./src/server/index.js"
+    "start": "cd ./distr; node ./server/index.js"
   },
   "keywords": [],
   "author": "Yaroslav <shamatienko.yaroslav@gmail.com>",

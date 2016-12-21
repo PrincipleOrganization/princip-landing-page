@@ -75,9 +75,9 @@ app.set('port', normalizePort(process.env.PORT || 8080));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.set('views', './src/client/pug');
+app.set('views', './server/pug');
 app.set('view engine', 'pug');
-app.use(express.static(path.join('distr/client/public')));
+app.use(express.static(path.join('./client/public')));
 
 let server = http.createServer(app);
 server.listen(app.get('port'));

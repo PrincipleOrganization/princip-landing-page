@@ -82,12 +82,12 @@ const KEYS = {
 
   sectionProductsProduct1: {
     en: "It\'s a typical Raspberry Pi computer with Atom software on board which enables connection with serial or modbus devices by a simple http request. It integrates your devices with any software system without additional components and expands opportunities to work and manage them. We use it on truck, rail or bulk scales and integrate it into 1C with REST service on board.",
-    ua: ''
+    ua: "Це звичайний Raspberry Pi комп\'ютер з установленим програмним забезпеченням Atom, який дозволяє з\'єднання з іншими пристроями через послідовні порти або MODBUS, шляхом простих запитів по HTTP. Допомагає легко інтегрувати пристрої з будь-якою програмною системою без додаткових компонентів і розширює можливості для роботи і управління. Даний комплекс використовується на автомобільних, залізничних або перевалочних вагах з інтеграцією з системами на базі платформи \"1С:Підприємство\" через REST API."
   },
 
   sectionProductsProduct2: {
     en: "Software which connects devices in network, collects their data and allows management through simple REST API.",
-    ua: ''
+    ua: "Програмне забезпечення, яке об\'єднує пристрої в мережі, збирає та обробляє необхідіні дані, і дозволяє здійснювати управління за допомогою простого REST API."
   },
 
   sectionServicesServiceTitle1: {
@@ -121,8 +121,8 @@ const KEYS = {
   },
 
   sectionServicesServiceSubtitle2: {
-    en: 'We provide support for solutions developed by us and any solutions based on the platform of 1C: Enterprise',
-    ua: "Ми надаємо підтримку для рішень розроблених нами, та рішень на платформі '1С:Підприємство'"
+    en: 'We provide support for solutions developed by us and any solutions based on the platform of 1C:Enterprise',
+    ua: "Ми надаємо підтримку для рішень розроблених нами, та рішень на платформі \"1С:Підприємство\""
   },
 
   sectionServicesServiceSubtitle3: {
@@ -146,8 +146,8 @@ const KEYS = {
   },
 
   sectionAboutUsLegend: {
-    en: 'We are a team of enthusiasts-professionals in the development and implementation of complex systems for business. Our specialization is IoT, web-applications, platform "1C: Enterprise" and more. Using the latest and proven technologies of well-known IT-giants we achieve excellent results and provide high quality products and services. Usability and efficiency - that is our main goal and idea.',
-    ua: ''
+    en: 'We are a team of enthusiasts-professionals in the development and implementation of complex systems for business. Our specialization is IoT, web-applications, platform 1C:Enterprise and more. Using the latest and proven technologies of well-known IT-giants we achieve excellent results and provide high quality products and services. Usability and efficiency - that is our main goal and idea.',
+    ua: "Ми команда ентузіастів-професіоналів у розробці та впровадженні складних систем для бізнесу. Нашою спеціалізацією є технології інтернету речей, web-застосунків, платформа \"1С:Підприємство\" та багато іншого. Вискористовуючи передові та перевірені технології IT-гігантів ми досягаємо високих результатів, створюємо якісні продукти та надаємо послуги. Зручність, точність та ефективність - це наша основна мета та ідея."
   },
 
   sectionAboutUsSubtitle: {
