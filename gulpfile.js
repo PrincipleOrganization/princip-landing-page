@@ -22,7 +22,7 @@ gulp.task('vendor', () => {
 });
 
 gulp.task('js', () => {
-  gulp.src(['./src/client/vendor/typed.jquery.min.js', './src/client/vendor/midnight.jquery.min.js', './src/client/vendor/anime.min.js', './src/client/js/**'])
+  gulp.src(['./src/client/js/typed.jquery.min.js', './src/client/js/midnight.jquery.min.js', './src/client/js/anime.min.js', './src/client/js/bootstrap.min.js', './src/client/js/**'])
     .pipe(concat('main.js', {newLine: ';'}))
     .pipe(uglify())
     .pipe(gulp.dest('./distr/client/public'));

@@ -9,7 +9,15 @@ $(document).ready(function() {
 });
 
 var navbarHandler = function() {
-  $('.navbar').midnight();
+  // $('.navbar').midnight();
+  $('#menu-burger').click(function(e) {
+    e.stopPropagation();
+    $('.navbar-right').toggleClass('active');
+  });
+
+  $(document).click(function() {
+    $('.navbar-right').removeClass('active');
+  });
 }
 
 var localizacion = function() {

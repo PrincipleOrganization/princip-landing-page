@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik|Cormorant+Garamond');
 @import url('vendor/font-awesome/css/font-awesome.min.css');
 @import url('vendor/magic.min.css');
-
+//@import url('vendor/bootstrap.min.css');
 
 /* -- VARIABLES -- */
 $font-main: 'Rubik', sans-serif;
@@ -120,7 +120,7 @@ p {
   background-color: $background-color-navbar;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  height: 5rem;
+  height: 6.5rem;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -149,6 +149,10 @@ p {
       margin-left: 15px;
       line-height: 3.5;
     }
+  }
+
+  #menu-burger {
+    display: none;
   }
 
   .navbar-right {
@@ -260,22 +264,6 @@ p {
       margin-top: 2rem;
       margin-bottom: 2rem;
       letter-spacing: 3px;
-    }
-  }
-
-  .section-body {
-    .clients-titles {
-      .client-title {
-        width: 32%;
-        float: left;
-        font-family: $font-secondary;
-        font-size: 45px;
-        margin-top: 6rem;
-        margin-bottom: 4rem;
-        letter-spacing: 3px;
-        line-height: 1.2;
-        min-height: 5rem;
-      }
     }
   }
 
@@ -394,7 +382,21 @@ p {
 
   /* -- CLIENTS -- */
   #clients {
-
+    .section-body {
+      .clients-titles {
+        .client-title {
+          width: 32%;
+          float: left;
+          font-family: $font-secondary;
+          font-size: 45px;
+          margin-top: 6rem;
+          margin-bottom: 4rem;
+          letter-spacing: 3px;
+          line-height: 1.2;
+          min-height: 5rem;
+        }
+      }
+    }
   }
 
   /* -- ABOUT -- */
@@ -525,5 +527,169 @@ p {
   &:hover {
     border-width: 1.6rem;
     background-color: $color-main-hover;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .navbar {
+    #menu-burger {
+      display: block;
+      float: right;
+      i {
+        color: $color-smoke;
+        line-height: 1.6;
+        padding: 0.8rem 1.1rem;
+        font-size: 30px;
+      }
+    }
+
+    .navbar-right {
+      display: none;
+
+      &.active {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 6.5rem;
+        left: 0;
+        background-color: $background-color-navbar;
+
+        .navbar-link {
+          display: block;
+          padding: 1rem 0;
+          border-bottom: 1px solid $color-smoke;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          border-radius: 0;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  .body{
+    #products {
+      .products {
+        .product {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+
+    #services {
+      .services{
+        .service-wrapper {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+          padding-bottom: 2rem;
+        }
+      }
+    }
+
+    #clients {
+      .section-body {
+        .clients-titles {
+          .client-title {
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .body {
+    #about {
+      .technologies {
+        .technology {
+          float: left;
+          width: 50%;
+
+          .icon {
+            margin: 1rem;
+            height: 40px;
+          }
+
+          .title {
+            margin: 1rem;
+            width: 10rem;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #header {
+    .landing {
+      .landing-items {
+        .landing-title {
+          font-size: 1.7rem;
+        }
+
+        .landing-subtitle {
+          font-size: 20px;
+        }
+
+        .landing-button {
+          margin-top: 6rem;
+          cursor: pointer;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .body {
+    #clients {
+      .section-body {
+        .clients-titles {
+          .client-title {
+            font-size: 30px;
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    #about {
+      .section-body {
+        margin-top: 1.6rem;
+        margin-bottom: 1.6rem;
+      }
+
+      .technologies {
+        .technology {
+          .icon {
+            height: 25px;
+          }
+
+          .title {
+            width: 7rem;
+          }
+        }
+      }
+    }
+
+    #contacts{
+      .contacts {
+        .contact {
+          float: none;
+        }
+      }
+    }
   }
 }
