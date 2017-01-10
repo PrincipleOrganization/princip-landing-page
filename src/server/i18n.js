@@ -71,8 +71,8 @@ const KEYS = {
   },
 
   sectionProductsProductTitle1: {
-    en: 'PANTHEON',
-    ua: 'PANTHEON'
+    en: 'Smart Scales',
+    ua: 'Smart Scales'
   },
 
   sectionProductsProductTitle2: {
@@ -82,7 +82,7 @@ const KEYS = {
 
   sectionProductsProduct1: {
     en: "It\'s a typical Raspberry Pi computer with Atom software on board which enables connection with serial or modbus devices by a simple http request. It integrates your devices with any software system without additional components and expands opportunities to work and manage them. We use it on truck, rail or bulk scales and integrate it into 1C with REST service on board.",
-    ua: "Це звичайний Raspberry Pi комп\'ютер з установленим програмним забезпеченням Atom, який дозволяє з\'єднання з іншими пристроями через послідовні порти або MODBUS, шляхом простих запитів по HTTP. Допомагає легко інтегрувати пристрої з будь-якою програмною системою без додаткових компонентів і розширює можливості для роботи і управління. Даний комплекс використовується на автомобільних, залізничних або перевалочних вагах з інтеграцією з системами на базі платформи \"1С:Підприємство\" через REST API."
+    ua: "Революційний продукт, який дозволяє по-сучасному підійти до комерційних зважувань на автомобільних та залізничних вагах. Він поєднує в собі сучасні розробки в ІТ та традиційні методи роботи із ваговим обладнанням."
   },
 
   sectionProductsProduct2: {
@@ -116,8 +116,8 @@ const KEYS = {
   },
 
   sectionServicesServiceElems1: {
-    en: ['IoT devices', 'IoT applications', 'IoT systems', 'CRM systems', 'WEB applications', 'Mobile applications'],
-    ua: ['IoT пристрої', 'IoT ПЗ', 'IoT системи', 'CRM системи', 'WEB ПЗ', 'ПЗ для смартфонів']
+    en: ['IoT devices', 'IoT applications', 'WEB and Mobile applications'],
+    ua: ['IoT пристрої для бізнесу', 'Програмне забезпечення для IoT', 'Програмне забезпечення для WEB та смартфонів']
   },
 
   sectionServicesServiceSubtitle2: {
@@ -132,7 +132,7 @@ const KEYS = {
 
   sectionServicesServiceElems3: {
     en: ['Agribusiness', 'Grain elevators', 'Grain and oil terminals', 'Oil refineries'],
-    ua: ['Аграрного бізнесу', 'Елеваторів', 'Зернових та олійних терміналів', 'Маслоекстакційних заводів']
+    ua: ['Аграрного бізнесу', 'Елеваторів', 'Зернових та олійних портових терміналів', 'Маслоекстракційних заводів']
   },
 
   sectionServicesServiceSubtitle4: {
@@ -147,7 +147,7 @@ const KEYS = {
 
   sectionAboutUsLegend: {
     en: 'We are a team of enthusiasts-professionals in the development and implementation of complex systems for business. Our specialization is IoT, web-applications, platform 1C:Enterprise and more. Using the latest and proven technologies of well-known IT-giants we achieve excellent results and provide high quality products and services. Usability and efficiency - that is our main goal and idea.',
-    ua: "Ми команда ентузіастів-професіоналів у розробці та впровадженні складних систем для бізнесу. Нашою спеціалізацією є технології інтернету речей, web-застосунків, платформа \"1С:Підприємство\" та багато іншого. Вискористовуючи передові та перевірені технології IT-гігантів ми досягаємо високих результатів, створюємо якісні продукти та надаємо послуги. Зручність, точність та ефективність - це наша основна мета та ідея."
+    ua: "Ми команда професіоналів у розробці та впровадженні складних систем для бізнесу. Нашою спеціалізацією автоматизація та впровадження сучасних технологій: IoT, web-застосунків, платформа \"1С:Підприємство\" та інше. Вискористовуючи передові та перевірені технології IT-гігантів ми досягаємо високих результатів, надаємо якісні послуги та продукти. Зручність, точність та ефективність - це наша основна мета та ідея."
   },
 
   sectionAboutUsSubtitle: {
