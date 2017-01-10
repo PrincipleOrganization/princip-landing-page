@@ -36,13 +36,13 @@ const KEYS = {
   },
 
   landingTitleP: {
-    en: 'for production facilities',
-    ua: 'для виробничих потужностей'
+    en: 'to the business community',
+    ua: 'для бізнесу'
   },
 
   landingSubtitle: {
     en: 'Keeping up with modern technologies',
-    ua: 'Рука в руку з сучасними технологіями'
+    ua: 'Йдемо в ногу сучасними технологіями'
   },
 
   landingButton: {
@@ -121,8 +121,8 @@ const KEYS = {
   },
 
   sectionServicesServiceSubtitle2: {
-    en: 'We provide support for solutions developed by us and any solutions based on the platform of 1C:Enterprise',
-    ua: "Ми надаємо підтримку для рішень розроблених нами, та рішень на платформі \"1С:Підприємство\""
+    en: 'We provide support for our solutions and any solutions based on the platform of 1C:Enterprise',
+    ua: "Ми надаємо підтримку для розроблених нами рішень, та рішень на платформі \"1С:Підприємство\""
   },
 
   sectionServicesServiceSubtitle3: {
@@ -146,8 +146,8 @@ const KEYS = {
   },
 
   sectionAboutUsLegend: {
-    en: 'We are a team of enthusiasts-professionals in the development and implementation of complex systems for business. Our specialization is IoT, web-applications, platform 1C:Enterprise and more. Using the latest and proven technologies of well-known IT-giants we achieve excellent results and provide high quality products and services. Usability and efficiency - that is our main goal and idea.',
-    ua: "Ми команда професіоналів у розробці та впровадженні складних систем для бізнесу. Нашою спеціалізацією автоматизація та впровадження сучасних технологій: IoT, web-застосунків, платформа \"1С:Підприємство\" та інше. Вискористовуючи передові та перевірені технології IT-гігантів ми досягаємо високих результатів, надаємо якісні послуги та продукти. Зручність, точність та ефективність - це наша основна мета та ідея."
+    en: 'We are a team of professionals in the development and implementation of complex systems for business. Our specialization is IoT, web-applications, platform 1C:Enterprise and more. Using the latest and proven technologies of well-known IT-giants we achieve excellent results and provide high quality products and services. Usability and efficiency - that is our main goal and idea.',
+    ua: "Ми команда професіоналів у розробці та впровадженні складних IT систем для бізнесу. Нашою спеціалізацією автоматизація та впровадження сучасних технологій: IoT, web-застосунків, платформа \"1С:Підприємство\" та інше. Вискористовуючи передові та перевірені технології IT-гігантів ми досягаємо високих результатів, надаємо якісні послуги та продукти. Зручність, точність та ефективність - це наша основна мета та ідея."
   },
 
   sectionAboutUsSubtitle: {
