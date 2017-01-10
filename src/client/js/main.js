@@ -81,9 +81,9 @@ var animation = function() {
 }
 
 var typingLandingTitle = function() {
-  var strings = ["IoT devices", "IoT applications", "IoT systems", "CRM systems", "WEB applications", "Mobile applications"];
+  var strings = ["IoT devices for business", "IoT applications",  "WEB applications", "Mobile applications"];
   if (language === 'en') {
-    strings = ['IoT пристрої', 'Програмне забезпечення IoT', 'IoT системи', 'CRM системи', 'Програмне забезпечення WEB', 'Програмне забезпечення смартфонів'];
+    strings = ['IoT пристрої для бізнесу (прототипування та впровадження)', 'Програмне забезпечення для IoT','Програмне забезпечення для WEB', 'Програмне забезпечення для смартфонів'];
   }
 
   $("#landing-title-iot").typed({
