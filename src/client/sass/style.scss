@@ -219,9 +219,12 @@ p {
         margin-top: 11rem;
         letter-spacing: 2.5px;
 
-        #landing-title-iot {
-          color: $color-main;
-          height: 60px;
+        #landing-title-iot-container {
+          height: 68px;
+
+          #landing-title-iot {
+            color: $color-main;
+          }
         }
       }
 
@@ -289,6 +292,7 @@ p {
         .product-elems p {
           text-align: left;
           line-height: 1.5;
+          text-align: justify;
         }
       }
     }
@@ -406,6 +410,7 @@ p {
     .section-body {
       margin-top: 2rem;
       margin-bottom: 2rem;
+      text-align: justify;
     }
 
     .technologies {
@@ -445,6 +450,7 @@ p {
 
     #contacts-title {
       font-size: $font-size-title;
+      margin-bottom: 1rem;
     }
 
     .contacts-nav {
@@ -530,6 +536,26 @@ p {
   }
 }
 
+@media only screen and (max-width: 1460px) {
+  #header {
+    background-color: $color-main;
+
+    .landing {
+
+      .landing-items {
+
+        .landing-title {
+          font-size: 2rem;
+        }
+
+        .landing-subtitle {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1160px) {
   .navbar {
     #menu-burger {
@@ -565,6 +591,24 @@ p {
           &:last-child {
             border-bottom: none;
           }
+        }
+      }
+    }
+  }
+
+  #header {
+    background-color: $color-main;
+
+    .landing {
+
+      .landing-items {
+
+        .landing-title {
+          font-size: 2rem;
+        }
+
+        .landing-subtitle {
+          font-size: 20px;
         }
       }
     }
@@ -632,19 +676,32 @@ p {
 }
 
 @media only screen and (max-width: 750px) {
+  .navbar {
+    .navbar-right {
+
+      &.active {
+        .navbar-link {
+          padding: 0;
+        }
+      }
+    }
+  }
+
   #header {
     .landing {
       .landing-items {
         .landing-title {
-          font-size: 1.7rem;
+          font-size: 1.2rem;
+          margin-top: 5rem;
         }
 
         .landing-subtitle {
-          font-size: 20px;
+          font-size: 12px;
+          margin-top: 1rem;
         }
 
         .landing-button {
-          margin-top: 6rem;
+          margin-top: 3rem;
           cursor: pointer;
           text-transform: uppercase;
         }

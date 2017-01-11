@@ -3,6 +3,7 @@ html
     title= title
 
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="google-site-verification" content="QfV6mp4liSY_DA26_SsiYc0PkTrHIL2VX0-mqBcdFWY")
 
     link(rel="stylesheet" href="style.css")
   body
@@ -34,7 +35,8 @@ html
         .container
           .landing-items
             .landing-title.hide
-              #landing-title-iot #{landingTitle}
+              #landing-title-iot-container
+                #landing-title-iot #{landingTitle}
               p #{landingTitleP}
             p.landing-subtitle.hide #{landingSubtitle}
             a.button.landing-button.hide#btn-main(href='#products') #{landingButton}

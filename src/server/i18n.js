@@ -42,7 +42,7 @@ const KEYS = {
 
   landingSubtitle: {
     en: 'Keeping up with modern technologies',
-    ua: 'Йдемо в ногу сучасними технологіями'
+    ua: 'Йдемо в ногу з сучасними технологіями'
   },
 
   landingButton: {
@@ -71,8 +71,8 @@ const KEYS = {
   },
 
   sectionProductsProductTitle1: {
-    en: 'Smart Scales',
-    ua: 'Smart Scales'
+    en: 'SmartScales',
+    ua: 'SmartScales'
   },
 
   sectionProductsProductTitle2: {
